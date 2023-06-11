@@ -20,7 +20,7 @@ public class DailyRainfallGenerator {
 				DataOutputStream dos = new DataOutputStream(new FileOutputStream(outFile));
 				
 				// Process data
-				for (int index = 0; index < date.length; index++) {
+				for (int index = 0; index < rainfall.length; index++) {
 					
 					// 3. Write data into data stream
 					

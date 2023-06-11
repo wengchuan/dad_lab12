@@ -13,7 +13,6 @@ public class DailyRainfallReader {
 			// 2. Create stream to read data
 			DataInputStream dis = new DataInputStream(new FileInputStream(sourceFile));
 			// Variables for processing byte-based data
-			String date = "";
 			int rainfall = 0;
 			int totalRainfall =0;
 			double averageRainfall =0;
@@ -23,9 +22,9 @@ public class DailyRainfallReader {
 			while (dis.available() > 0) {
 
 				// Read data
-				date = dis.readUTF();
+				
 				rainfall = dis.read();
-				System.out.println(date + "\t" + rainfall);
+				System.out.println(rainfall);
 
 				// Calculate total rainfall
 				totalRainfall += rainfall;
